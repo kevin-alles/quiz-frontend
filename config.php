@@ -3,7 +3,7 @@
 // Configuration file for server settings
 
 return [
-    'server_url' => 'quiz.local.it-mit-alles.de',
+    'server_url' => 'localhost',
     'server_port' => 8080,
 ];
 
