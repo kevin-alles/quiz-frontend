@@ -1,0 +1,13 @@
+name: Trigger Webhook on push
+on:
+  push:
+
+jobs:
+  trigger-webhook:
+    runs-on: self-hosted
+    steps:
+      - name: Trigger webhook
+        uses: jasongitmail/fast-webhook@v1
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          json: '{"branch": "${{ github.ref_name }}", "repo": "${{ github.repositoryUrl }}"}'
