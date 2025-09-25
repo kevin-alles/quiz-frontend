@@ -3,7 +3,5 @@
 // Configuration file for server settings
 
 return [
-    'server_url' => 'localhost',
-    'server_port' => 8080,
+    'server_url' => 'http://localhost:8080',
 ];
-
