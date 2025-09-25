@@ -14,7 +14,7 @@ $post_context = stream_context_create(
     ]
 );
 
-if (str_contains(file_get_contents("$serverUrl/reachable", false, $post_context), "Server is reachable")) {
+if (str_contains(file_get_contents("$serverUrl/reachable", false, $post_context), "Backend is reachable!")) {
     http_response_code(200);
 } else {
     http_response_code(503);
